@@ -45,10 +45,10 @@
 
 <br/>
 
-<!-- ADVANCED NETRUNNER CASCADE & TACTICAL RADAR HUD -->
+<!-- CONTINUOUS LIVE DIGITAL RAIN CASCADE -->
 <div align="center">
   <a href="https://github.com/cybparam">
-    <img src="assets/cyber-terminal-rain.svg" alt="Advanced Cybernetic Terminal Console" width="100%" />
+    <img src="assets/matrix-rain.svg" alt="Continuous Live Digital Rain Cascade" width="100%" />
   </a>
 </div>
 
@@ -132,7 +132,7 @@
 ### 🔒 `// 03. CLASSIFIED ENCRYPTED ARCHIVES`
 
 <details>
-  <summary><b>▶ <code>[CIPHER_0x7F9A]: e8 3f b4 71 a9 04 d8 f2 91 6c 3b 1e 5a f0 8c 47</code></b></summary>
+  <summary><b>▶ <code>[CIPHER: 0x7F9A_e83fb471a904d8f2]</code> :: <code>43 59 42 50 41 52</code> ▶ [DECRYPT OPERATOR LOGS]</b></summary>
   <br/>
 
 ```text
@@ -153,7 +153,7 @@ OBJECTIVES & MILESTONES:
 </details>
 
 <details>
-  <summary><b>▶ <code>[CIPHER_0x00FF]: 7f 45 4c 46 02 01 01 00 00 00 00 00 a0 5c 01 00</code></b></summary>
+  <summary><b>▶ <code>[CIPHER: 0x00FF_7f454c4602010100]</code> :: <code>00 7F 9A C2 10 FA</code> ▶ [DECRYPT MAINFRAME SPECS]</b></summary>
   <br/>
 
 ```text
@@ -168,7 +168,7 @@ OBJECTIVES & MILESTONES:
 </details>
 
 <details>
-  <summary><b>▶ <code>[CIPHER_0x33A1]: 5b 43 59 42 50 41 52 41 4d 5f 4e 45 54 5f 52 49</code></b></summary>
+  <summary><b>▶ <code>[CIPHER: 0x33A1_wcBMA7uW2w0EBAIC]</code> :: <code>FF 00 7F 00 F5 D4</code> ▶ [DECRYPT SECURE HANDSHAKE]</b></summary>
   <br/>
 
 ```text
