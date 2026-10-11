@@ -29,7 +29,8 @@ cybparam/
     ├── terminal-session.svg        # Animated terminal session dossier card
     ├── cyber-divider.svg           # Animated cyber pulse conduit divider
     ├── cyber-telemetry-hud.svg     # Animated hardware & neural telemetry HUD
-    ├── matrix-rain.gif             # Matrix digital rain terminal stream
+    ├── matrix-rain.svg             # Continuous live digital matrix rain cascade
+    ├── matrix-rain.gif             # Matrix digital rain terminal stream (legacy)
     └── cyberpunk-banner.png        # Static cyber banner backup
 ```
 

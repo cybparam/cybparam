@@ -1,0 +1,198 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 180" width="100%" height="100%">
+  <defs>
+    <linearGradient id="rain-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#040711" />
+      <stop offset="50%" stop-color="#020408" />
+      <stop offset="100%" stop-color="#040711" />
+    </linearGradient>
+
+    <!-- Fade out at bottom and top -->
+    <linearGradient id="rain-fade" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.8" />
+      <stop offset="15%" stop-color="#000000" stop-opacity="0" />
+      <stop offset="85%" stop-color="#000000" stop-opacity="0" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.9" />
+    </linearGradient>
+
+    <filter id="head-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <pattern id="rain-scanlines" width="100" height="3" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="100" y2="0" stroke="#00F5D4" stroke-opacity="0.03" stroke-width="1" />
+    </pattern>
+  </defs>
+
+  <style>
+    .mono { font-family: 'Consolas', 'Courier New', Courier, monospace; font-size: 11px; }
+    
+    .c-head { fill: #E6FFF9; font-weight: bold; filter: url(#head-glow); }
+    .c-lead { fill: #00F5D4; font-weight: bold; }
+    .c-body { fill: #00FF66; opacity: 0.85; }
+    .c-dim  { fill: #008F39; opacity: 0.55; }
+    .c-dark { fill: #004D1F; opacity: 0.3; }
+
+    @keyframes drop1 { 0% { transform: translateY(-240px); } 100% { transform: translateY(220px); } }
+    @keyframes drop2 { 0% { transform: translateY(-260px); } 100% { transform: translateY(220px); } }
+    @keyframes drop3 { 0% { transform: translateY(-220px); } 100% { transform: translateY(220px); } }
+    @keyframes drop4 { 0% { transform: translateY(-280px); } 100% { transform: translateY(220px); } }
+    @keyframes drop5 { 0% { transform: translateY(-210px); } 100% { transform: translateY(220px); } }
+
+    .stream-1  { animation: drop1 2.8s linear infinite; animation-delay: -0.4s; }
+    .stream-2  { animation: drop2 3.6s linear infinite; animation-delay: -1.8s; }
+    .stream-3  { animation: drop3 2.2s linear infinite; animation-delay: -0.9s; }
+    .stream-4  { animation: drop4 4.0s linear infinite; animation-delay: -2.7s; }
+    .stream-5  { animation: drop5 3.1s linear infinite; animation-delay: -1.2s; }
+    .stream-6  { animation: drop1 2.5s linear infinite; animation-delay: -2.1s; }
+    .stream-7  { animation: drop2 3.8s linear infinite; animation-delay: -0.6s; }
+    .stream-8  { animation: drop3 2.9s linear infinite; animation-delay: -2.4s; }
+    .stream-9  { animation: drop4 3.3s linear infinite; animation-delay: -1.5s; }
+    .stream-10 { animation: drop5 2.4s linear infinite; animation-delay: -0.2s; }
+    .stream-11 { animation: drop1 3.5s linear infinite; animation-delay: -3.0s; }
+    .stream-12 { animation: drop2 2.7s linear infinite; animation-delay: -1.1s; }
+    .stream-13 { animation: drop3 4.2s linear infinite; animation-delay: -2.5s; }
+    .stream-14 { animation: drop4 2.3s linear infinite; animation-delay: -0.7s; }
+    .stream-15 { animation: drop5 3.0s linear infinite; animation-delay: -1.9s; }
+    .stream-16 { animation: drop1 3.7s linear infinite; animation-delay: -0.3s; }
+    .stream-17 { animation: drop2 2.6s linear infinite; animation-delay: -2.2s; }
+    .stream-18 { animation: drop3 3.4s linear infinite; animation-delay: -1.4s; }
+    .stream-19 { animation: drop4 2.8s linear infinite; animation-delay: -0.8s; }
+    .stream-20 { animation: drop5 3.9s linear infinite; animation-delay: -2.9s; }
+    .stream-21 { animation: drop1 2.4s linear infinite; animation-delay: -1.6s; }
+    .stream-22 { animation: drop2 3.2s linear infinite; animation-delay: -0.5s; }
+    .stream-23 { animation: drop3 4.1s linear infinite; animation-delay: -2.0s; }
+    .stream-24 { animation: drop4 2.9s linear infinite; animation-delay: -1.3s; }
+    .stream-25 { animation: drop5 3.5s linear infinite; animation-delay: -0.1s; }
+  </style>
+
+  <!-- Frame Background -->
+  <rect x="2" y="2" width="896" height="176" rx="6" fill="url(#rain-bg)" stroke="#1E293B" stroke-width="1.2" />
+
+  <!-- Rain Viewport Area (Clipped) -->
+  <g clip-path="url(#rain-clip)" transform="translate(0, 24)">
+    <clipPath id="rain-clip">
+      <rect x="2" y="0" width="896" height="152" />
+    </clipPath>
+
+    <!-- 25 Parallel Falling Data Streams -->
+    <!-- Stream 01 -->
+    <g class="stream-1" transform="translate(25, 0)">
+      <text x="0" y="0" class="mono c-dark">0</text><text x="0" y="14" class="mono c-dim">X</text><text x="0" y="28" class="mono c-body">7</text><text x="0" y="42" class="mono c-body">F</text><text x="0" y="56" class="mono c-lead">9</text><text x="0" y="70" class="mono c-head">A</text>
+    </g>
+    <!-- Stream 02 -->
+    <g class="stream-2" transform="translate(60, 0)">
+      <text x="0" y="0" class="mono c-dark">C</text><text x="0" y="14" class="mono c-dark">Y</text><text x="0" y="28" class="mono c-dim">B</text><text x="0" y="42" class="mono c-body">P</text><text x="0" y="56" class="mono c-body">A</text><text x="0" y="70" class="mono c-lead">R</text><text x="0" y="84" class="mono c-head">M</text>
+    </g>
+    <!-- Stream 03 -->
+    <g class="stream-3" transform="translate(95, 0)">
+      <text x="0" y="0" class="mono c-dark">1</text><text x="0" y="14" class="mono c-dim">0</text><text x="0" y="28" class="mono c-body">1</text><text x="0" y="42" class="mono c-lead">1</text><text x="0" y="56" class="mono c-head">0</text>
+    </g>
+    <!-- Stream 04 -->
+    <g class="stream-4" transform="translate(130, 0)">
+      <text x="0" y="0" class="mono c-dark">Ψ</text><text x="0" y="14" class="mono c-dim">Ω</text><text x="0" y="28" class="mono c-body">λ</text><text x="0" y="42" class="mono c-body">Ξ</text><text x="0" y="56" class="mono c-lead">Σ</text><text x="0" y="70" class="mono c-head">Δ</text>
+    </g>
+    <!-- Stream 05 -->
+    <g class="stream-5" transform="translate(165, 0)">
+      <text x="0" y="0" class="mono c-dark">N</text><text x="0" y="14" class="mono c-dim">E</text><text x="0" y="28" class="mono c-body">U</text><text x="0" y="42" class="mono c-body">R</text><text x="0" y="56" class="mono c-lead">A</text><text x="0" y="70" class="mono c-head">L</text>
+    </g>
+    <!-- Stream 06 -->
+    <g class="stream-6" transform="translate(200, 0)">
+      <text x="0" y="0" class="mono c-dark">4</text><text x="0" y="14" class="mono c-dim">8</text><text x="0" y="28" class="mono c-body">6</text><text x="0" y="42" class="mono c-lead">5</text><text x="0" y="56" class="mono c-head">C</text>
+    </g>
+    <!-- Stream 07 -->
+    <g class="stream-7" transform="translate(235, 0)">
+      <text x="0" y="0" class="mono c-dark">A</text><text x="0" y="14" class="mono c-dim">I</text><text x="0" y="28" class="mono c-body">_</text><text x="0" y="42" class="mono c-body">R</text><text x="0" y="56" class="mono c-lead">I</text><text x="0" y="70" class="mono c-head">G</text>
+    </g>
+    <!-- Stream 08 -->
+    <g class="stream-8" transform="translate(270, 0)">
+      <text x="0" y="0" class="mono c-dark">0</text><text x="0" y="14" class="mono c-dim">0</text><text x="0" y="28" class="mono c-body">F</text><text x="0" y="42" class="mono c-lead">F</text><text x="0" y="56" class="mono c-head">8</text>
+    </g>
+    <!-- Stream 09 -->
+    <g class="stream-9" transform="translate(305, 0)">
+      <text x="0" y="0" class="mono c-dark">Q</text><text x="0" y="14" class="mono c-dim">L</text><text x="0" y="28" class="mono c-body">E</text><text x="0" y="42" class="mono c-body">A</text><text x="0" y="56" class="mono c-lead">R</text><text x="0" y="70" class="mono c-head">N</text>
+    </g>
+    <!-- Stream 10 -->
+    <g class="stream-10" transform="translate(340, 0)">
+      <text x="0" y="0" class="mono c-dark">1</text><text x="0" y="14" class="mono c-dim">0</text><text x="0" y="28" class="mono c-body">1</text><text x="0" y="42" class="mono c-lead">0</text><text x="0" y="56" class="mono c-head">1</text>
+    </g>
+    <!-- Stream 11 -->
+    <g class="stream-11" transform="translate(375, 0)">
+      <text x="0" y="0" class="mono c-dark">S</text><text x="0" y="14" class="mono c-dim">Y</text><text x="0" y="28" class="mono c-body">S</text><text x="0" y="42" class="mono c-body">_</text><text x="0" y="56" class="mono c-lead">O</text><text x="0" y="70" class="mono c-head">K</text>
+    </g>
+    <!-- Stream 12 -->
+    <g class="stream-12" transform="translate(410, 0)">
+      <text x="0" y="0" class="mono c-dark">0</text><text x="0" y="14" class="mono c-dim">x</text><text x="0" y="28" class="mono c-body">A</text><text x="0" y="42" class="mono c-lead">4</text><text x="0" y="56" class="mono c-head">B</text>
+    </g>
+    <!-- Stream 13 (Center Accent) -->
+    <g class="stream-13" transform="translate(445, 0)">
+      <text x="0" y="0" class="mono c-dark">C</text><text x="0" y="14" class="mono c-dark">Y</text><text x="0" y="28" class="mono c-dim">B</text><text x="0" y="42" class="mono c-body">E</text><text x="0" y="56" class="mono c-body">R</text><text x="0" y="70" class="mono c-lead">P</text><text x="0" y="84" class="mono c-head">NK</text>
+    </g>
+    <!-- Stream 14 -->
+    <g class="stream-14" transform="translate(480, 0)">
+      <text x="0" y="0" class="mono c-dark">7</text><text x="0" y="14" class="mono c-dim">F</text><text x="0" y="28" class="mono c-body">9</text><text x="0" y="42" class="mono c-lead">A</text><text x="0" y="56" class="mono c-head">0</text>
+    </g>
+    <!-- Stream 15 -->
+    <g class="stream-15" transform="translate(515, 0)">
+      <text x="0" y="0" class="mono c-dark">R</text><text x="0" y="14" class="mono c-dim">O</text><text x="0" y="28" class="mono c-body">O</text><text x="0" y="42" class="mono c-lead">T</text><text x="0" y="56" class="mono c-head">_</text>
+    </g>
+    <!-- Stream 16 -->
+    <g class="stream-16" transform="translate(550, 0)">
+      <text x="0" y="0" class="mono c-dark">0</text><text x="0" y="14" class="mono c-dim">1</text><text x="0" y="28" class="mono c-body">0</text><text x="0" y="42" class="mono c-body">0</text><text x="0" y="56" class="mono c-lead">1</text><text x="0" y="70" class="mono c-head">1</text>
+    </g>
+    <!-- Stream 17 -->
+    <g class="stream-17" transform="translate(585, 0)">
+      <text x="0" y="0" class="mono c-dark">M</text><text x="0" y="14" class="mono c-dim">A</text><text x="0" y="28" class="mono c-body">T</text><text x="0" y="42" class="mono c-lead">R</text><text x="0" y="56" class="mono c-head">X</text>
+    </g>
+    <!-- Stream 18 -->
+    <g class="stream-18" transform="translate(620, 0)">
+      <text x="0" y="0" class="mono c-dark">D</text><text x="0" y="14" class="mono c-dim">E</text><text x="0" y="28" class="mono c-body">V</text><text x="0" y="42" class="mono c-body">I</text><text x="0" y="56" class="mono c-lead">C</text><text x="0" y="70" class="mono c-head">E</text>
+    </g>
+    <!-- Stream 19 -->
+    <g class="stream-19" transform="translate(655, 0)">
+      <text x="0" y="0" class="mono c-dark">λ</text><text x="0" y="14" class="mono c-dim">Ξ</text><text x="0" y="28" class="mono c-body">Σ</text><text x="0" y="42" class="mono c-lead">Ω</text><text x="0" y="56" class="mono c-head">Ψ</text>
+    </g>
+    <!-- Stream 20 -->
+    <g class="stream-20" transform="translate(690, 0)">
+      <text x="0" y="0" class="mono c-dark">B</text><text x="0" y="14" class="mono c-dim">A</text><text x="0" y="28" class="mono c-body">S</text><text x="0" y="42" class="mono c-body">H</text><text x="0" y="56" class="mono c-lead">_</text><text x="0" y="70" class="mono c-head">4</text>
+    </g>
+    <!-- Stream 21 -->
+    <g class="stream-21" transform="translate(725, 0)">
+      <text x="0" y="0" class="mono c-dark">1</text><text x="0" y="14" class="mono c-dim">1</text><text x="0" y="28" class="mono c-body">0</text><text x="0" y="42" class="mono c-lead">0</text><text x="0" y="56" class="mono c-head">1</text>
+    </g>
+    <!-- Stream 22 -->
+    <g class="stream-22" transform="translate(760, 0)">
+      <text x="0" y="0" class="mono c-dark">E</text><text x="0" y="14" class="mono c-dim">X</text><text x="0" y="28" class="mono c-body">E</text><text x="0" y="42" class="mono c-body">C</text><text x="0" y="56" class="mono c-lead">U</text><text x="0" y="70" class="mono c-head">TE</text>
+    </g>
+    <!-- Stream 23 -->
+    <g class="stream-23" transform="translate(795, 0)">
+      <text x="0" y="0" class="mono c-dark">0</text><text x="0" y="14" class="mono c-dim">x</text><text x="0" y="28" class="mono c-body">7</text><text x="0" y="42" class="mono c-lead">F</text><text x="0" y="56" class="mono c-head">F</text>
+    </g>
+    <!-- Stream 24 -->
+    <g class="stream-24" transform="translate(830, 0)">
+      <text x="0" y="0" class="mono c-dark">P</text><text x="0" y="14" class="mono c-dim">A</text><text x="0" y="28" class="mono c-body">C</text><text x="0" y="42" class="mono c-body">K</text><text x="0" y="56" class="mono c-lead">E</text><text x="0" y="70" class="mono c-head">T</text>
+    </g>
+    <!-- Stream 25 -->
+    <g class="stream-25" transform="translate(865, 0)">
+      <text x="0" y="0" class="mono c-dark">1</text><text x="0" y="14" class="mono c-dim">0</text><text x="0" y="28" class="mono c-body">1</text><text x="0" y="42" class="mono c-lead">1</text><text x="0" y="56" class="mono c-head">0</text>
+    </g>
+
+    <!-- Top and Bottom subtle gradient overlay -->
+    <rect x="0" y="0" width="896" height="152" fill="url(#rain-fade)" pointer-events="none" />
+  </g>
+
+  <!-- Scanline texture -->
+  <rect x="2" y="2" width="896" height="176" fill="url(#rain-scanlines)" pointer-events="none" />
+
+  <!-- Terminal Title Bar -->
+  <rect x="3" y="3" width="894" height="22" rx="4" fill="#070c18" stroke="#1E293B" stroke-width="0.8" />
+  <circle cx="18" cy="14" r="3.5" fill="#FF5F56" />
+  <circle cx="30" cy="14" r="3.5" fill="#FFBD2E" />
+  <circle cx="42" cy="14" r="3.5" fill="#27C93F" />
+
+  <text x="60" y="17" class="mono" font-size="9.5" font-weight="bold" fill="#00FF66" letter-spacing="1">CONTINUOUS_DIGITAL_RAIN // STREAM_0x7F9A [LIVE_CASCADE]</text>
+  <text x="880" y="17" text-anchor="end" class="mono" font-size="9" fill="#00F5D4">FEED: 60 FPS | CASCADE: INFINITE</text>
+</svg>
