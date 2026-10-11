@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="session-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050811" />
+      <stop offset="50%" stop-color="#0a0f1d" />
+      <stop offset="100%" stop-color="#050811" />
+    </linearGradient>
+
+    <linearGradient id="neon-cyan-pink" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F5D4" />
+      <stop offset="50%" stop-color="#00BBF9" />
+      <stop offset="100%" stop-color="#FF007F" />
+    </linearGradient>
+
+    <pattern id="sess-scanlines" width="100" height="4" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="100" y2="0" stroke="#00F5D4" stroke-opacity="0.03" stroke-width="1.5" />
+    </pattern>
+  </defs>
+
+  <style>
+    .mono { font-family: 'Courier New', Courier, monospace; }
+    
+    .cursor-blink {
+      animation: blink 0.9s infinite;
+    }
+    @keyframes blink {
+      0%, 49% { opacity: 1; }
+      50%, 100% { opacity: 0; }
+    }
+
+    .pulse-dot {
+      animation: pdot 2s ease-in-out infinite alternate;
+    }
+    @keyframes pdot {
+      0% { opacity: 0.3; }
+      100% { opacity: 1; filter: drop-shadow(0 0 4px #00FF66); }
+    }
+
+    .beam-sweep {
+      animation: bsweep 5s linear infinite;
+    }
+    @keyframes bsweep {
+      0% { transform: translateY(0px); opacity: 0; }
+      20% { opacity: 0.6; }
+      80% { opacity: 0.6; }
+      100% { transform: translateY(200px); opacity: 0; }
+    }
+  </style>
+
+  <!-- Frame Background -->
+  <rect x="2" y="2" width="896" height="196" rx="6" fill="url(#session-bg)" stroke="#1E293B" stroke-width="1.5" />
+  <rect x="2" y="2" width="896" height="196" rx="6" fill="url(#sess-scanlines)" />
+
+  <!-- Scanline Beam -->
+  <g class="beam-sweep">
+    <line x1="2" y1="0" x2="898" y2="0" stroke="#00F5D4" stroke-width="1.2" opacity="0.4" />
+  </g>
+
+  <!-- Corner Brackets -->
+  <path d="M 2 24 L 2 2 L 24 2" fill="none" stroke="#00F5D4" stroke-width="2" />
+  <path d="M 898 24 L 898 2 L 876 2" fill="none" stroke="#FF007F" stroke-width="2" />
+  <path d="M 2 176 L 2 198 L 24 198" fill="none" stroke="#FF007F" stroke-width="2" />
+  <path d="M 898 176 L 898 198 L 876 198" fill="none" stroke="#00F5D4" stroke-width="2" />
+
+  <!-- Terminal Title Bar -->
+  <rect x="3" y="3" width="894" height="26" rx="5" fill="#070c18" stroke="#1E293B" stroke-width="0.8" />
+  <circle cx="20" cy="16" r="4" fill="#FF5F56" />
+  <circle cx="34" cy="16" r="4" fill="#FFBD2E" />
+  <circle cx="48" cy="16" r="4" fill="#27C93F" />
+
+  <text x="68" y="19" class="mono" font-size="10.5" font-weight="bold" fill="#00F5D4" letter-spacing="1">SESSION: 0x7F9A // cybparam@neural-rig: ~</text>
+  <text x="880" y="19" text-anchor="end" class="mono" font-size="9.5" fill="#64748B">STATUS: 200 OK | TTY: /dev/pts/4</text>
+
+  <!-- Session Content Rows -->
+  <g transform="translate(25, 48)">
+    <!-- Row 1: Identity -->
+    <text x="0" y="14" class="mono" font-size="11" fill="#00F5D4" font-weight="bold">[+] IDENTITY</text>
+    <text x="135" y="14" class="mono" font-size="11" fill="#64748B">:</text>
+    <text x="155" y="14" class="mono" font-size="11.5" fill="#FFFFFF" font-weight="bold">cybparam</text>
+    <rect x="235" y="2" width="75" height="17" rx="3" fill="#0c172e" stroke="#00F5D4" stroke-width="0.8" />
+    <text x="242" y="14" class="mono" font-size="9" fill="#00F5D4" font-weight="bold">OPERATOR</text>
+
+    <!-- Row 2: Codename -->
+    <text x="0" y="36" class="mono" font-size="11" fill="#00F5D4" font-weight="bold">[+] CODENAME</text>
+    <text x="135" y="36" class="mono" font-size="11" fill="#64748B">:</text>
+    <text x="155" y="36" class="mono" font-size="11" fill="#E2E8F0">Cybernetic Architect &amp; Systems Builder</text>
+
+    <!-- Row 3: Clearance -->
+    <text x="0" y="58" class="mono" font-size="11" fill="#FF007F" font-weight="bold">[+] CLEARANCE</text>
+    <text x="135" y="58" class="mono" font-size="11" fill="#64748B">:</text>
+    <text x="155" y="58" class="mono" font-size="11" fill="#FF007F" font-weight="bold">LEVEL 5 // BLACK-OPS (RESTRICTED)</text>
+
+    <!-- Row 4: Location -->
+    <text x="0" y="80" class="mono" font-size="11" fill="#00F5D4" font-weight="bold">[+] LOCATION</text>
+    <text x="135" y="80" class="mono" font-size="11" fill="#64748B">:</text>
+    <text x="155" y="80" class="mono" font-size="11" fill="#94A3B8">Encrypted Nodes // 127.0.0.1 // The Digital Aether</text>
+
+    <!-- Row 5: Focus -->
+    <text x="0" y="102" class="mono" font-size="11" fill="#00F5D4" font-weight="bold">[+] CORE FOCUS</text>
+    <text x="135" y="102" class="mono" font-size="11" fill="#64748B">:</text>
+    <text x="155" y="102" class="mono" font-size="11" fill="#E2E8F0">Python · Autonomous AI Agents · Reinforcement Models · Linux Systems</text>
+
+    <!-- Row 6: Philosophy & Status -->
+    <text x="0" y="124" class="mono" font-size="11" fill="#00FF66" font-weight="bold">[+] SYS STATUS</text>
+    <text x="135" y="124" class="mono" font-size="11" fill="#64748B">:</text>
+    <circle cx="160" cy="120" r="3.5" fill="#00FF66" class="pulse-dot" />
+    <text x="172" y="124" class="mono" font-size="11" fill="#00FF66" font-weight="bold">ONLINE // ALL GHOST CHANNELS SYNCHRONIZED</text>
+    <text x="560" y="124" class="mono cursor-blink" font-size="12" fill="#00F5D4" font-weight="bold">█</text>
+  </g>
+</svg>

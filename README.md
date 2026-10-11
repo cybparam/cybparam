@@ -17,78 +17,75 @@
     <a href="https://github.com/cybparam?tab=repositories">
       <img src="https://img.shields.io/badge/REPOSITORIES-CLASSIFIED-050811?style=for-the-badge&logo=github&logoColor=00F5D4&labelColor=0a0f1d" alt="Repositories" />
     </a>
-    <img src="https://img.shields.io/badge/SECURITY-ROOT_ACCESS-050811?style=for-the-badge&logo=auth0&logoColor=FF007F&labelColor=0a0f1d" alt="Security" />
-    <img src="https://img.shields.io/badge/NEURAL_CORE-ONLINE-050811?style=for-the-badge&logo=target&logoColor=00FF66&labelColor=0a0f1d" alt="Core Status" />
-    <img src="https://komarev.com/ghpvc/?username=cybparam&label=SYS_UPLINKS&color=00f5d4&style=for-the-badge&labelColor=050811" alt="Access Count" />
+    <a href="https://github.com/cybparam">
+      <img src="https://img.shields.io/badge/SECURITY-ROOT_ACCESS-050811?style=for-the-badge&logo=auth0&logoColor=FF007F&labelColor=0a0f1d" alt="Security" />
+    </a>
+    <a href="https://github.com/cybparam">
+      <img src="https://img.shields.io/badge/NEURAL_CORE-ONLINE-050811?style=for-the-badge&logo=target&logoColor=00FF66&labelColor=0a0f1d" alt="Core Status" />
+    </a>
+    <a href="https://github.com/cybparam">
+      <img src="https://img.shields.io/badge/SYS_ACCESS-AUTHORIZED%20%5B0x7F9A%5D-050811?style=for-the-badge&logo=radar&logoColor=00F5D4&labelColor=0a0f1d&color=00F5D4" alt="Access Status" />
+    </a>
   </p>
 
 </div>
 
-<img src="assets/cyber-divider.svg" width="100%" />
+<a href="https://github.com/cybparam">
+  <img src="assets/cyber-divider.svg" width="100%" alt="Cyber Divider" />
+</a>
 
 <br/>
 
-```text
-╭── [ SESSION: 0x7F9A // cybparam@neural-rig: ~ ] ──────────────────────────────────────────╮
-│                                                                                           │
-│  [+] IDENTITY     : cybparam                                                              │
-│  [+] CODENAME     : Cybernetic Architect & Systems Builder                                │
-│  [+] CLEARANCE    : LEVEL 5 // BLACK-OPS (RESTRICTED)                                     │
-│  [+] LOCATION     : Encrypted Nodes // 127.0.0.1 // The Digital Aether                    │
-│  [+] CORE FOCUS   : Python · Autonomous AI Agents · Reinforcement Models · Linux Systems  │
-│  [+] PHILOSOPHY   : Learn -> Decompile -> Construct -> Automate -> Repeat                 │
-│  [+] CURRENT RUN  : Training reinforcement neural agents & building stealth tooling       │
-│  [+] SYS STATUS   : ONLINE // ALL GHOST CHANNELS SYNCHRONIZED                             │
-│                                                                                           │
-╰───────────────────────────────────────────────────────────────────────────────────────────╯
-```
-
+<!-- DYNAMIC TERMINAL SESSION CARD -->
 <div align="center">
-  <p><b><code>[ LIVE TERMINAL RAIN // MAINFRAME PACKET STREAM ]</code></b></p>
-  <img src="assets/matrix-rain.gif" alt="Matrix Digital Rain Stream" width="100%" height="140" style="object-fit: cover; border-radius: 6px; border: 1px solid #1E293B;" />
+  <a href="https://github.com/cybparam">
+    <img src="assets/terminal-session.svg" alt="Terminal Session Dossier" width="100%" />
+  </a>
 </div>
 
 <br/>
 
-<img src="assets/cyber-divider.svg" width="100%" />
+<div align="center">
+  <p><b><code>[ LIVE TERMINAL RAIN // MAINFRAME PACKET STREAM ]</code></b></p>
+  <a href="https://github.com/cybparam">
+    <img src="assets/matrix-rain.gif" alt="Matrix Digital Rain Stream" width="100%" height="140" style="object-fit: cover; border-radius: 6px; border: 1px solid #1E293B;" />
+  </a>
+</div>
+
+<br/>
+
+<a href="https://github.com/cybparam">
+  <img src="assets/cyber-divider.svg" width="100%" alt="Cyber Divider" />
+</a>
 
 ### ⚡ `// 01. ACTIVE CYBER PAYLOADS & REPOSITORIES`
+
+<!-- DYNAMIC LIVE REPOSITORY CARDS -->
+<div align="center">
+  <a href="https://github.com/cybparam/tic-tac-toe-ai">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=cybparam&repo=tic-tac-toe-ai&bg_color=050811&border_color=00F5D4&title_color=00F5D4&text_color=94A3B8&icon_color=FF007F" alt="tic-tac-toe-ai" />
+  </a>
+  &nbsp;
+  <a href="https://github.com/cybparam/cybparam">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=cybparam&repo=cybparam&bg_color=050811&border_color=00F5D4&title_color=00F5D4&text_color=94A3B8&icon_color=FF007F" alt="cybparam" />
+  </a>
+</div>
+
+<br/>
 
 | Targeted Node | Signal & Mission Classification | Protocol | Status |
 | :--- | :--- | :---: | :---: |
 | **[tic-tac-toe-ai](https://github.com/cybparam/tic-tac-toe-ai)** | Self-learning reinforcement agent trained over 200,000 game cycles. | `Q-LEARNING / PY` | `● DEPLOYED` |
 | **[cybparam](https://github.com/cybparam/cybparam)** | Root configuration dossier & live telemetry terminal dashboard. | `MARKDOWN / SVG` | `● LIVE` |
-| **[neural-vault](https://github.com/cybparam)** | Experimental autonomous neural networks & algorithmic exploration. | `AI / EXPLORATION` | `○ IN PROGRESS` |
+| **[neural-vault](https://github.com/cybparam?tab=repositories)** | Experimental autonomous neural networks & algorithmic exploration. | `AI / EXPLORATION` | `○ IN PROGRESS` |
 
 <br/>
 
-<img src="assets/cyber-divider.svg" width="100%" />
+<a href="https://github.com/cybparam">
+  <img src="assets/cyber-divider.svg" width="100%" alt="Cyber Divider" />
+</a>
 
-### 🛠️ `// 02. CYBERNETIC ARSENAL [WEAPONIZED TECH STACK]`
-
-<div align="center">
-  <p>
-    <a href="https://skillicons.dev">
-      <img src="https://skillicons.dev/icons?i=python,c,cpp,linux,bash,docker,git,github,vscode,postgres&theme=dark" alt="Cybernetic Weaponry Stack" />
-    </a>
-  </p>
-</div>
-
-```text
-┌── [ SUBSYSTEM INVENTORY ] ────────────────────────────────────────────────────────────────┐
-│  • CORE RUNTIMES  : Python 3.12+, C/C++, Bash Scripting                                   │
-│  • NEURAL MATRIX  : PyTorch, Reinforcement Learning (Q-Learning), Heuristic Algorithms    │
-│  • HOST SYSTEMS   : Linux (Arch / Debian Kernel Hardened), Docker Containerization        │
-│  • DEV RIG        : VS Code (Dark Cyber), Git CLI, Terminal Emulators, GitHub Actions      │
-│  • PROTOCOLS      : REST APIs, WebSockets, Zero-Knowledge Encryption, JSON/YAML Specs     │
-└───────────────────────────────────────────────────────────────────────────────────────────┘
-```
-
-<br/>
-
-<img src="assets/cyber-divider.svg" width="100%" />
-
-### 📊 `// 03. LIVE TELEMETRY & MAINFRAME METRICS`
+### 📊 `// 02. LIVE TELEMETRY & MAINFRAME METRICS`
 
 <div align="center">
   <!-- Interactive Terminal Stats Simulation -->
@@ -122,67 +119,86 @@
 <br/>
 
 <!-- Real-time Hardware & Neural Telemetry HUD Widget -->
-<img src="assets/cyber-telemetry-hud.svg" width="100%" />
+<a href="https://github.com/cybparam">
+  <img src="assets/cyber-telemetry-hud.svg" width="100%" alt="Telemetry HUD" />
+</a>
 
 <br/>
 
-<img src="assets/cyber-divider.svg" width="100%" />
+<a href="https://github.com/cybparam">
+  <img src="assets/cyber-divider.svg" width="100%" alt="Cyber Divider" />
+</a>
 
-### 🔒 `// 04. CLASSIFIED ENCRYPTED ARCHIVES`
+### 🔒 `// 03. CLASSIFIED ENCRYPTED ARCHIVES`
 
 <details>
-  <summary><b>▶ [CLICK TO DECRYPT] CLASSIFIED OPERATOR LOGS &amp; MISSION DIRECTIVES</b></summary>
+  <summary><b>▶ [CLICK TO DECRYPT] CIPHER_PAYLOAD_0x7F9A // CLASSIFIED STREAM</b></summary>
   <br/>
 
 ```text
 ========================================================================================
-[LOG #4092] STATUS: ACCESS_LOGGED // TRANSMISSION INTERCEPTED
+[ENCRYPTED BLOB: 0x7F9A] // CIPHER: AES-256-GCM // HASH: SHA-512
 ----------------------------------------------------------------------------------------
-"Most people see code as syntax. I see it as synthetic architecture.
- When you build an autonomous agent, you aren't just giving instructions to a machine;
- you are shaping an entity that reasons through state spaces in milliseconds."
-
-OBJECTIVES & MILESTONES:
-  [✔] Infiltrate low-level algorithm design & memory concepts
-  [✔] Construct self-optimizing game agents (Tic-Tac-Toe Q-Learning)
-  [~] Expanding to deeper reinforcement models & neural networks
-  [~] Deploying robust, fault-tolerant autonomous workflows
+00000000  43 59 42 50 41 52 41 4D  00 7F 9A C2 10 FA 88 12  |CYBPARAM........|
+00000010  E8 3F B4 71 A9 04 D8 F2  91 6C 3B 1E 5A F0 8C 47  |.?q....l;.Z..G..|
+00000020  32 9B 11 8E D4 7C 02 F6  A5 88 D1 03 E9 4A B7 65  |2....|.......J.e|
+00000030  7C 33 D9 F8 61 0B A4 E2  90 CD 1F 48 83 2B 0E 5D  ||3..a......H.+.]|
+00000040  F1 A0 4E 76 99 B2 38 C5  D0 6E 1A 8F 45 23 9C 7A  |..Nv..8..n..E#.z|
+00000050  8B 41 0C 6E FA 32 19 88  5E D7 34 C0 91 A6 E2 1B  |.A.n.2..^.4.....|
+00000060  94 0E 7B 3A D2 85 41 F9  C3 68 2E 0D 7A 1F 99 B4  |..{:..A..h..z...|
+00000070  FF 00 7F 00 F5 D4 79 28  CA 05 08 11 41 49 5F 51  |......y(....AI_Q|
+----------------------------------------------------------------------------------------
+[SIG]: 0x8F9B2C4D_DEADC0DE_BAADF00D  [STATUS]: CIPHERTEXT_LOCKED_LEVEL_5
 ========================================================================================
 ```
 </details>
 
 <details>
-  <summary><b>▶ [CLICK TO DECRYPT] QUANTUM MAINFRAME SPECIFICATIONS</b></summary>
+  <summary><b>▶ [CLICK TO DECRYPT] QUANTUM_CORE_DUMP_0x00FF // RAW_HEX</b></summary>
   <br/>
 
 ```text
-┌── [ SYSTEM ARCHITECTURE SPECS ] ──────────────────────────────────────────────────────┐
-│  • OS ARCHITECTURE  : x86_64 Linux / Hardened Micro-Kernel                           │
-│  • SHELL INTERFACE  : ZSH + Powerlevel10k + Cyberpunk Prompts                         │
-│  • CIPHER SECURITY  : Zero-Knowledge Protocols / PGP 4096-bit                         │
-│  • COMPILER OPTIM   : -O3 -march=native -ffast-math                                   │
-│  • TELEMETRY FEED   : WebSocket Encrypted Neural Pipe                                 │
-└───────────────────────────────────────────────────────────────────────────────────────┘
+========================================================================================
+[CORE DUMP: 0x00FF88] :: OBFUSCATED_BINARY_STREAM
+----------------------------------------------------------------------------------------
+0x0000:   7F 45 4C 46  02 01 01 00  00 00 00 00  00 00 00 00  .ELF............
+0x0010:   03 00 3E 00  01 00 00 00  A0 5C 01 00  00 00 00 00  ..>......\......
+0x0020:   40 00 00 00  00 00 00 00  18 92 03 00  00 00 00 00  @...............
+0x0030:   00 00 00 00  40 00 38 00  0B 00 40 00  24 00 23 00  ....@.8...@.$.#.
+0x0040:   5B 43 59 42  50 41 52 41  4D 5F 41 49  5F 43 4F 52  [CYBPARAM_AI_COR
+0x0050:   45 5F 51 5F  4C 45 41 52  4E 49 4E 47  5F 32 30 30  E_Q_LEARNING_200
+0x0060:   4B 5F 53 59  4E 41 50 53  45 5F 56 41  55 4C 54 5D  K_SYNAPSE_VAULT]
+0x0070:   D4 F5 00 FF  7F 00 9D 4E  DD 05 08 11  0A 0F 1D 00  .......N........
+----------------------------------------------------------------------------------------
+[ENTROPY]: 7.9984 BITS/BYTE  [CHECKSUM]: VALID (SHA256: 3a7b...c9e2)
+========================================================================================
 ```
 </details>
 
 <details>
-  <summary><b>▶ [CLICK TO DECRYPT] ESTABLISH SECURE HANDSHAKE (COMMS)</b></summary>
+  <summary><b>▶ [CLICK TO DECRYPT] NEURAL_HANDSHAKE_CIPHER // PGP_KEY</b></summary>
   <br/>
 
 ```text
-┌── [ SECURE UPLINK CHANNELS ] ─────────────────────────────────────────────────────────┐
-│  • GITHUB COMM     : https://github.com/cybparam                                      │
-│  • PUSH PROTOCOL   : Issues, PRs, and collaborative neural forks welcome              │
-│  • HANDSHAKE VIBE  : Open to discussing AI, systems engineering & obscure ideas       │
-│  • STATUS          : Online, debugging something weird in the dark                    │
-└───────────────────────────────────────────────────────────────────────────────────────┘
+-----BEGIN CYBERNETIC PGP ENCRYPTED KEY-----
+Version: ShadowNet Crypt v5.2 (cybparam/node-09)
+Comment: Direct Handshake Channel: https://github.com/cybparam
+
+wcBMA7uW2w0EBAICAQf+L49xQjR0uL1y8v4w1z9A8b7c6d5e4f3g2h1j0k9l8m7n
+6p5q4r3s2t1u0v9w8x7y6z5a4b3c2d1e0f9g8h7j6k5l4m3n2p1q0r9s8t7u6v5w
+4x3y2z1a0b9c8d7e6f5g4h3j2k1l0m9n8p7q6r5s4t3u2v1w0x9y8z7a6b5c4d3e
+2f1g0h9j8k7l6m5n4p3q2r1s0t9u8v7w6x5y4z3a2b1c0d9e8f7g6h5j4k3l2m1n
+0p9q8r7s6t5u4v3w2x1y0z9a8b7c6d5e4f3g2h1j0k9l8m7n6p5q4r3s2t1u0v9w
+8x7y6z5a4b3c2d1e0f9g8h7j6k5l4m3n2p1q0r9s8t7u6v5w4x3y2z1a0b=9xZ1
+-----END CYBERNETIC PGP ENCRYPTED KEY-----
 ```
 </details>
 
 <br/>
 
-<img src="assets/cyber-divider.svg" width="100%" />
+<a href="https://github.com/cybparam">
+  <img src="assets/cyber-divider.svg" width="100%" alt="Cyber Divider" />
+</a>
 
 <div align="center">
   <p>

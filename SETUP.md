@@ -26,6 +26,7 @@ cybparam/
 ├── .gitignore
 └── assets/
     ├── cyber-terminal-banner.svg   # Animated HUD terminal banner
+    ├── terminal-session.svg        # Animated terminal session dossier card
     ├── cyber-divider.svg           # Animated cyber pulse conduit divider
     ├── cyber-telemetry-hud.svg     # Animated hardware & neural telemetry HUD
     ├── matrix-rain.gif             # Matrix digital rain terminal stream
