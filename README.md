@@ -35,10 +35,7 @@ I don't have everything figured out. That's the point.
 
 | Project | Signal |
 | --- | --- |
-| **[Tic-Tac-Toe AI](https://github.com/cybparam?tab=repositories)** | A self-learning Tic-Tac-Toe agent trained on 200,000 games. |
-| **[Next experiment](https://github.com/cybparam)** | The next idea is probably already taking over a notebook. |
-
-> Replace the links above with your real repository URLs. Keep only projects that are public and ready to show.
+| **[Tic-Tac-Toe AI](https://github.com/cybparam/tic-tac-toe-ai)** | A self-learning Tic-Tac-Toe agent trained on 200,000 games. |
 
 ## `// tools in the lab`
 
