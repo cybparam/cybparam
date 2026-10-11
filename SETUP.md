@@ -20,15 +20,19 @@ Also replace the sample project link and remove any section you don't want.
 ## 3. File layout
 
 ```text
-your-username/
+cybparam/
 ├── README.md
 ├── SETUP.md
 ├── .gitignore
 └── assets/
-    └── cyberpunk-banner.png
+    ├── cyber-terminal-banner.svg   # Animated HUD terminal banner
+    ├── cyber-divider.svg           # Animated cyber pulse conduit divider
+    ├── cyber-telemetry-hud.svg     # Animated hardware & neural telemetry HUD
+    ├── matrix-rain.gif             # Matrix digital rain terminal stream
+    └── cyberpunk-banner.png        # Static cyber banner backup
 ```
 
-Keep the banner in `assets/` so the image path works in the profile README.
+Keep all assets in `assets/` so relative image paths render correctly on GitHub.
 
 ## 4. Upload with Git
 

@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 150" width="100%" height="100%">
+  <defs>
+    <linearGradient id="hud-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050811" />
+      <stop offset="100%" stop-color="#0a0f1d" />
+    </linearGradient>
+
+    <linearGradient id="bar-cyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F5D4" />
+      <stop offset="100%" stop-color="#00BBF9" />
+    </linearGradient>
+
+    <linearGradient id="bar-pink" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF007F" />
+      <stop offset="100%" stop-color="#9D4EDD" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .mono { font-family: 'Courier New', Courier, monospace; }
+    
+    .pulse-bar-1 {
+      animation: pbar1 3s ease-in-out infinite alternate;
+    }
+    @keyframes pbar1 {
+      0% { width: 140px; }
+      100% { width: 195px; }
+    }
+
+    .pulse-bar-2 {
+      animation: pbar2 4s ease-in-out infinite alternate;
+    }
+    @keyframes pbar2 {
+      0% { width: 120px; }
+      100% { width: 180px; }
+    }
+
+    .pulse-bar-3 {
+      animation: pbar3 2.5s ease-in-out infinite alternate;
+    }
+    @keyframes pbar3 {
+      0% { width: 150px; }
+      100% { width: 190px; }
+    }
+
+    .hex-stream {
+      animation: hexroll 8s linear infinite;
+    }
+    @keyframes hexroll {
+      0% { transform: translateY(0px); }
+      100% { transform: translateY(-70px); }
+    }
+
+    .blink-status {
+      animation: bstatus 1.5s infinite;
+    }
+    @keyframes bstatus {
+      0%, 40% { opacity: 1; }
+      50%, 90% { opacity: 0.3; }
+      100% { opacity: 1; }
+    }
+  </style>
+
+  <!-- Container -->
+  <rect x="2" y="2" width="896" height="146" rx="6" fill="url(#hud-bg)" stroke="#1E293B" stroke-width="1.2" />
+
+  <!-- Corner Brackets -->
+  <path d="M 2 20 L 2 2 L 20 2" fill="none" stroke="#00F5D4" stroke-width="2" />
+  <path d="M 898 20 L 898 2 L 880 2" fill="none" stroke="#FF007F" stroke-width="2" />
+  <path d="M 2 130 L 2 148 L 20 148" fill="none" stroke="#FF007F" stroke-width="2" />
+  <path d="M 898 130 L 898 148 L 880 148" fill="none" stroke="#00F5D4" stroke-width="2" />
+
+  <!-- Top Title -->
+  <text x="25" y="24" class="mono" font-size="10" font-weight="bold" fill="#00F5D4" letter-spacing="1.5">// LIVE HARDWARE &amp; NEURAL TELEMETRY [NODE_DIAGNOSTICS]</text>
+  <line x1="25" y1="30" x2="875" y2="30" stroke="#1E293B" stroke-width="1" />
+
+  <!-- Column 1: Meters -->
+  <g transform="translate(25, 42)">
+    <!-- Metric 1: Quantum Synapse Core -->
+    <text x="0" y="14" class="mono" font-size="10.5" fill="#94A3B8">SYNAPSE CORE LOAD [8x Q-THREADS]</text>
+    <text x="210" y="14" class="mono" font-size="10.5" fill="#00F5D4" font-weight="bold">92.4%</text>
+    <rect x="0" y="20" width="200" height="7" rx="2" fill="#0F172A" />
+    <rect x="0" y="20" width="185" height="7" rx="2" fill="url(#bar-cyan)" class="pulse-bar-1" />
+
+    <!-- Metric 2: Neural Memory Pool -->
+    <text x="0" y="44" class="mono" font-size="10.5" fill="#94A3B8">NEURAL MEMORY MATRIX [DISTRIBUTED]</text>
+    <text x="210" y="44" class="mono" font-size="10.5" fill="#FF007F" font-weight="bold">87.1%</text>
+    <rect x="0" y="50" width="200" height="7" rx="2" fill="#0F172A" />
+    <rect x="0" y="50" width="174" height="7" rx="2" fill="url(#bar-pink)" class="pulse-bar-2" />
+
+    <!-- Metric 3: Packet Bandwidth -->
+    <text x="0" y="74" class="mono" font-size="10.5" fill="#94A3B8">UPLINK BANDWIDTH [DARKNET TUNNEL]</text>
+    <text x="210" y="74" class="mono" font-size="10.5" fill="#00BBF9" font-weight="bold">98.9%</text>
+    <rect x="0" y="80" width="200" height="7" rx="2" fill="#0F172A" />
+    <rect x="0" y="80" width="192" height="7" rx="2" fill="url(#bar-cyan)" class="pulse-bar-3" />
+  </g>
+
+  <!-- Divider line -->
+  <line x1="310" y1="40" x2="310" y2="135" stroke="#1E293B" stroke-width="1" />
+
+  <!-- Column 2: Active Daemons & Subsystems -->
+  <g transform="translate(330, 48)">
+    <text x="0" y="10" class="mono" font-size="10" fill="#64748B" letter-spacing="1">ACTIVE DAEMONS &amp; THREADS</text>
+    
+    <g transform="translate(0, 22)">
+      <circle cx="5" cy="5" r="3" fill="#00FF66" class="blink-status" />
+      <text x="15" y="8" class="mono" font-size="10.5" fill="#E2E8F0">daemon.ai_reinforcement</text>
+      <text x="210" y="8" class="mono" font-size="9" fill="#00FF66">[RUNNING]</text>
+    </g>
+
+    <g transform="translate(0, 40)">
+      <circle cx="5" cy="5" r="3" fill="#00F5D4" class="blink-status" />
+      <text x="15" y="8" class="mono" font-size="10.5" fill="#E2E8F0">daemon.neural_evaluator</text>
+      <text x="210" y="8" class="mono" font-size="9" fill="#00F5D4">[OPTIMIZING]</text>
+    </g>
+
+    <g transform="translate(0, 58)">
+      <circle cx="5" cy="5" r="3" fill="#FF007F" class="blink-status" />
+      <text x="15" y="8" class="mono" font-size="10.5" fill="#E2E8F0">daemon.entropy_collector</text>
+      <text x="210" y="8" class="mono" font-size="9" fill="#FF007F">[STEALTH]</text>
+    </g>
+
+    <g transform="translate(0, 76)">
+      <circle cx="5" cy="5" r="3" fill="#9D4EDD" class="blink-status" />
+      <text x="15" y="8" class="mono" font-size="10.5" fill="#E2E8F0">daemon.system_defense</text>
+      <text x="210" y="8" class="mono" font-size="9" fill="#9D4EDD">[ARMED]</text>
+    </g>
+  </g>
+
+  <!-- Divider line -->
+  <line x1="650" y1="40" x2="650" y2="135" stroke="#1E293B" stroke-width="1" />
+
+  <!-- Column 3: Encrypted Memory Stream & Cryptography -->
+  <g transform="translate(670, 45)">
+    <text x="0" y="10" class="mono" font-size="10" fill="#64748B" letter-spacing="1">ENCRYPTED MEMORY BUS</text>
+    
+    <g clip-path="url(#hex-clip)" transform="translate(0, 20)">
+      <clipPath id="hex-clip">
+        <rect x="0" y="0" width="200" height="65" />
+      </clipPath>
+      <g class="hex-stream">
+        <text x="0" y="12" class="mono" font-size="9.5" fill="#00F5D4">0x7F8C :: 48 65 6C 6C 6F 20</text>
+        <text x="0" y="26" class="mono" font-size="9.5" fill="#64748B">0x7F98 :: 57 6F 72 6C 64 21</text>
+        <text x="0" y="40" class="mono" font-size="9.5" fill="#FF007F">0x7FA4 :: 43 59 42 50 41 52</text>
+        <text x="0" y="54" class="mono" font-size="9.5" fill="#00BBF9">0x7FB0 :: 41 4D 5F 4E 45 54</text>
+        <text x="0" y="68" class="mono" font-size="9.5" fill="#9D4EDD">0x7FBC :: DE AD BE EF 00 FF</text>
+        <text x="0" y="82" class="mono" font-size="9.5" fill="#00FF66">0x7FC8 :: CA FE BA BE 42 42</text>
+        <text x="0" y="96" class="mono" font-size="9.5" fill="#00F5D4">0x7FD4 :: 01 10 11 00 10 01</text>
+        <text x="0" y="110" class="mono" font-size="9.5" fill="#FF007F">0x7FE0 :: 7F 9A C2 10 FA 88</text>
+      </g>
+    </g>
+  </g>
+</svg>

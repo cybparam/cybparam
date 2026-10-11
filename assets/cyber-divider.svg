@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 30" width="100%" height="30">
+  <defs>
+    <linearGradient id="div-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F5D4" stop-opacity="0.1" />
+      <stop offset="25%" stop-color="#00F5D4" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#FF007F" stop-opacity="1" />
+      <stop offset="75%" stop-color="#00BBF9" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#00F5D4" stop-opacity="0.1" />
+    </linearGradient>
+
+    <filter id="div-glow">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .mono { font-family: 'Courier New', Courier, monospace; }
+    .pulse-packet {
+      animation: packet-move 3.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    }
+    @keyframes packet-move {
+      0% { transform: translateX(30px); opacity: 0; }
+      10% { opacity: 1; }
+      90% { opacity: 1; }
+      100% { transform: translateX(840px); opacity: 0; }
+    }
+
+    .pulse-packet-reverse {
+      animation: packet-move-rev 4.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    }
+    @keyframes packet-move-rev {
+      0% { transform: translateX(840px); opacity: 0; }
+      10% { opacity: 1; }
+      90% { opacity: 1; }
+      100% { transform: translateX(30px); opacity: 0; }
+    }
+
+    .center-glyph {
+      animation: glyph-glow 2s ease-in-out infinite alternate;
+    }
+    @keyframes glyph-glow {
+      0% { fill: #00F5D4; filter: drop-shadow(0 0 2px #00F5D4); }
+      100% { fill: #FF007F; filter: drop-shadow(0 0 6px #FF007F); }
+    }
+  </style>
+
+  <!-- Base track lines -->
+  <line x1="20" y1="15" x2="880" y2="15" stroke="#1E293B" stroke-width="2" />
+  <line x1="120" y1="15" x2="780" y2="15" stroke="url(#div-grad)" stroke-width="1.5" />
+
+  <!-- Animated data packets -->
+  <g class="pulse-packet">
+    <circle cx="0" cy="15" r="3" fill="#00F5D4" filter="url(#div-glow)" />
+    <line x1="-15" y1="15" x2="0" y2="15" stroke="#00F5D4" stroke-width="1.5" opacity="0.6" />
+  </g>
+
+  <g class="pulse-packet-reverse">
+    <circle cx="0" cy="15" r="2.5" fill="#FF007F" filter="url(#div-glow)" />
+    <line x1="0" y1="15" x2="12" y2="15" stroke="#FF007F" stroke-width="1.2" opacity="0.6" />
+  </g>
+
+  <!-- Left End Terminal -->
+  <polygon points="12,15 22,9 22,21" fill="#00F5D4" />
+  <circle cx="28" cy="15" r="2" fill="#050811" stroke="#00F5D4" stroke-width="1.5" />
+
+  <!-- Right End Terminal -->
+  <polygon points="888,15 878,9 878,21" fill="#FF007F" />
+  <circle cx="872" cy="15" r="2" fill="#050811" stroke="#FF007F" stroke-width="1.5" />
+
+  <!-- Center HUD Diamond & Glyph -->
+  <g transform="translate(450, 15)">
+    <rect x="-42" y="-10" width="84" height="20" rx="3" fill="#050811" stroke="#1E293B" stroke-width="1" />
+    <polygon points="-8,-6 0,-12 8,-6 0,0" fill="#00F5D4" opacity="0.4" />
+    <text x="0" y="4" text-anchor="middle" class="mono center-glyph" font-size="9" font-weight="bold" letter-spacing="2">&lt; 0x7F // CYB &gt;</text>
+  </g>
+</svg>
